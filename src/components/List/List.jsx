@@ -41,6 +41,7 @@ const List = () => {
         displayProducts.map((product) => (
           <Item key={product._id} product={product} />
         ))}
+      {/* {displayProducts && <Item product={displayProducts[0]} />} */}
     </div>
   );
 };
