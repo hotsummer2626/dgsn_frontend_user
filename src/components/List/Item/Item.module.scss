@@ -1,0 +1,50 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  padding-bottom: 20px;
+  border: 1px solid $grey;
+  border-radius: 10px;
+  .imgWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 80%;
+    }
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .name {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .expireDate {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width:576px) {
+  .container{
+    flex-direction: row;
+    padding-bottom: 0;
+    gap: 40px;
+    .imgWrapper{
+      width: 30%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

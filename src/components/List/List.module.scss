@@ -1,0 +1,16 @@
+.container {
+  width: 90%;
+  height: calc(100vh - 100px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0;
+    grid-template-columns: initial;
+    height: calc(100vh - 120px);
+  }
+}
